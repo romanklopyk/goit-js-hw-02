@@ -1,18 +1,18 @@
 function getShippingCost(country){
     let tax;
-    switch (country.toLowerCse()){
-        case 'China': tax = 100;
+    switch (country.toLowerCase()){
+        case 'china': tax = 100;
         break;
-        case 'Chile': tax = 250;
+        case 'chile': tax = 250;
         break;
-        case 'Australia': tax = 170;
+        case 'australia': tax = 170;
         break;
-        case 'Jamaica': tax = 120;
+        case 'jamaica': tax = 120;
         break;
         default:
-            return 'Sorry, there is no delivery to your country'
+            return 'Sorry, there is no delivery to your country';
     }
-    return `Shipping to ${country} will cost ${price} credits`
+    return `Shipping to ${country} will cost ${tax} credits`;
 }
 
 
